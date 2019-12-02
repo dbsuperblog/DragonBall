@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<!-- Comment can be added -->
+
+<html>
+<head>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="../images/webheader.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader2.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader3.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader4.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader5.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader6.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader7.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader8.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader9.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader10.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader11.jpg" width="1900" height="700" alt="slideshow">
+</div>
+<!--javascript-->
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 4 seconds
+}
+</script>
+
+
+<meta charset="UTF-8" />
+<title>movies.html</title>
+<link rel="stylesheet" type="text/css" href="externalcss.css">
+<h1>Dragon Ball</h1>
+<h2>Past / Present / Future </h2>
+
+<br></br>
+
+</head>
+
+<body>
+
+<!--css-->
+<style>
+.embolden{font-weight:bold;}
+ul{float:center;text-align:center;width:100%;padding:0;margin:0;list-style-type:none;}
+a{float:center;width:6em;text-decoration:none;color:white;background-color:purple;padding:0.8em 3em;border-right:1px solid white;}
+a:hover {background-color:#ff3300;}
+li {display:inline;}
+</style>
+
+<ul>
+<li><a href="index.html">Index</a></th>
+<li><a href="history.html">History</a></th>
+<li><a href="movies.html">Movies</a></th>
+<li><a href="characters.html">Characters</a></th>
+<li><a href="voiceactors.html">Voice Actors</a></th>
+<li><a href="theories.html">Theories</a></th>
+<li><a href="favourite.html">Favourite</a></th>
+<li><a href="info.html">Info</a></th>
+</ul>
+<br></br>
+
+<!--javascript-->
+<center><script>
+  var currentDate = new Date(),
+      day = currentDate.getDate(),
+      month = currentDate.getMonth() + 1,
+      year = currentDate.getFullYear();
+  document.write(day + "/" + month + "/" + year)
+</script>
+<!--javascript--><script>
+	var currentTime = new Date(),
+      hours = currentTime.getHours(),
+      minutes = currentTime.getMinutes();
+
+	if (minutes < 10) {
+	 minutes = "0" + minutes;
+  }
+
+	document.write(hours + ":" + minutes)
+</script>
+</center>
+<br></br>
+
+
+<!--css-->
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E3E5E6;
+    font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+    padding: 10px 20px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+</style>
+
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>2018</h2>
+      <p> Dragon Ball Super: Broly</p>
+	  <iframe style="iframe-align:center;" width="210" height="112" src="https://www.youtube.com/embed/FHgm89hKpXU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2015</h2>
+      <p>Dragon Ball Z: Resurrection 'F'</p>
+	  <iframe width="210" height="112" src="https://www.youtube.com/embed/WiONylGn8Xw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2013</h2>
+      <p>Dragon Ball Z: Battle of Gods</p>
+	  <iframe width="210" height="112" src="https://www.youtube.com/embed/yQJM963be_I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1996</h2>
+      <p> Dragon Ball: The Path to Power</p>
+	  <iframe width="210" height="112" src="https://www.youtube.com/embed/T12X5AYahUU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1995</h2>
+      <p> Dragon Ball Z: Wrath of the Dragon</p>
+	  <iframe width="210" height="112" src="https://www.youtube.com/embed/52VKPAbEWug" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1995</h2>
+      <p>Dragon Ball Z: Fusion Reborn</p>
+	  <iframe width="210" height="112" src="https://www.youtube.com/embed/i40pZmKfQkE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+  </div>
+  <div class="container left">
+	<div class="content">
+		<h2>1994</h2>
+		<p>Dragon Ball Z: Bio-Broly</p>
+		<iframe width="210" height="112" src="https://www.youtube.com/embed/3F9pMjsYEQY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+   </div>
+   <div class="container right">
+    <div class="content">
+      <h2>1994</h2>
+      <p> Dragon Ball Z: Broly - Second Coming</p>
+	  <iframe width="210" height="112" src="https://www.youtube.com/embed/boIZFaafmMU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1993</h2>
+      <p> Dragon Ball Z: Bojack Unbound</p>
+	  <iframe width="210" height="112" src="https://www.youtube.com/embed/rzlM0HhzUjo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1993</h2>
+      <p> Dragon Ball Z: Broly - The Legendary Super Saiyan</p>
+	  <iframe width="210" height="112" src="https://www.youtube.com/embed/g9gVOgYVd9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1992</h2>
+      <p> Dragon Ball Z: Super Android 13</p>
+	  <iframe width="210" height="112" src="https://www.youtube.com/embed/uQ0Vx0ve7N4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1992</h2>
+      <p> Dragon Ball Z: The Return of Cooler</p>
+	  <iframe width="210" height="112" src="https://www.youtube.com/embed/zaMETx9zKHE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	</div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1991</h2>
+      <p> Dragon Ball Z: Super Saiyan Son Goku</p>
+	  <iframe width="180" height="112" src="https://www.youtube.com/embed/pq7c8ZXvTv8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1990</h2>
+      <p> Dragon Ball Z: Super Battle in the World</p>
+	  
+	</div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1990</h2>
+      <p> Dragon Ball Z: The Strongest Guy in the World</p>
+	  <iframe width="210" height="112" src="https://www.youtube.com/embed/WB_UdLr29_M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1988</h2>
+      <p> Dragin Ball: Mystical Adveture</p>
+	  <iframe width="210" height="112" src="https://www.youtube.com/embed/DIjku6BtYW4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1987</h2>
+      <p> Dragon Ball: Sleeping Princess in Devil's Castle</p>
+	  <iframe width="210" height="112" src="https://www.youtube.com/embed/hZLInlDaK90" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+   </div>
+	  <div class="container right">
+    <div class="content">
+      <h2>1986</h2>
+      <p> Dragin Ball: Curse of the Blood Rubies</p>
+	  <iframe width="180" height="96" src="https://www.youtube.com/embed/C7mJ_qDnBBA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+  </div>
+</div>
+
+<br></br>
+
+</body>
+
+</html>
+

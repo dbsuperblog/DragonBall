@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!-- info page -->
+<html>
+<head>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="../images/webheader.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader2.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader3.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader4.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader5.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader6.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader7.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader8.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader9.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader10.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader11.jpg" width="1900" height="700" alt="slideshow">
+</div>
+
+<!--javascript-->
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 4 seconds
+}
+</script>
+
+<meta charset="UTF-8" />
+<title>index.html</title>
+<link rel="stylesheet" type="text/css" href="externalcss.css">
+<h1>Dragon Ball</h1>
+<h2>Past / Present / Future </h2>
+
+<br></br>
+
+</head>
+<body>
+
+<!--css-->
+<style>
+.embolden{font-weight:bold;}
+ul{float:center;text-align:center;width:100%;padding:0;margin:0;list-style-type:none;}
+a{float:center;width:6em;text-decoration:none;color:white;background-color:purple;padding:0.8em 3em;border-right:1px solid white;}
+a:hover {background-color:#ff3300;}
+li {display:inline;}
+</style>
+
+<ul>
+<li><a href="index.html">Index</a></th>
+<li><a href="history.html">History</a></th>
+<li><a href="movies.html">Movies</a></th>
+<li><a href="characters.html">Characters</a></th>
+<li><a href="voiceactors.html">Voice Actors</a></th>
+<li><a href="theories.html">Theories</a></th>
+<li><a href="favourite.html">Favourite</a></th>
+<li><a href="info.html">Info</a></th>
+</ul>
+<br></br>
+
+<!--javascript-->
+<center><script>
+  var currentDate = new Date(),
+      day = currentDate.getDate(),
+      month = currentDate.getMonth() + 1,
+      year = currentDate.getFullYear();
+  document.write(day + "/" + month + "/" + year)
+</script>
+<!--javascript--><script>
+	var currentTime = new Date(),
+      hours = currentTime.getHours(),
+      minutes = currentTime.getMinutes();
+
+	if (minutes < 10) {
+	 minutes = "0" + minutes;
+  }
+
+	document.write(hours + ":" + minutes)
+</script>
+</center>
+
+<h3><b>  </b></h3>
+
+<!--css-->
+<style>
+table, th, td {
+	border: 1px solid black;
+} 
+table {
+	width:65.5%;
+}
+th	{
+	height: 50px;
+}
+p	{
+	width:65.5%;
+}
+</style>
+
+
+<center><p>My website is based on the Japanese franchise of Dragon Ball which isnt just a movie series but also a tv series and comic series.
+			The page has a simple layout which is made from the html and css with extra features to allow easy manovering around the website. 
+			I used my own knowledge plus some extra help from "w3schools" to make this website successful by cooperating my html, css and javascript knowledge with "w3schools".
+			I used javascript to create the slideshow at the top of each page to entice the user to be more interested in the webpage and i also used javascript
+			to  have thew time and date shown on every page.</p>
+			<p>For the security of the website, if i was to upload the website online i would consider SFTP and SSL as SFTP allows me to upload new files and programs without having
+			to worry about someone hacking and taking the code during the transfer and SSL to secure the path between the browser and web server. I created back ups of my website files 
+			just incase someone was to be able to hack the servers and delete my webpages i could secure the server again and re upload my webpage. The servers should be frequently maintained
+			to prevent any attacks or atleast limit them.</p>
+			<p>In the future for this webpage i would add in more information  and history details about the dragon ball franchise and also have clips and information on the tv series and comics.
+			The theories page and favourite page would be more detailed as the theories page would be updated regulary like a blog about my thoughts and theories about the shows and movies and 
+			the favourite page would update every now and then about my opinion on characters. I would allow users to create a login so they can save different files, information and have 
+			notifications when the website updates, there will also be a poll for the dragon ball characters where users can vote for their favourite characters.</p>
+			</center>
+
+<center><p>each number is for a different page on the tabs that are used to manouver around each page.
+			1 = index page = Home. 2 = History page = History. 3 = Movies page = Movies. 4 = Characters page = Characters. 5 = Voice Actors page = Voice Actors. 6 = Theories page = Theories. 
+			7 = Favourite Characters page = Favourite.</p>
+			</center>
+<center><table>
+	<tr>
+		<th>Breakdown</th>
+		<th>pages</th>
+		<th>Additional Informtation</th>
+	</tr>
+	<tr>
+		<td>Index Page</td>
+	</tr>
+	<tr>
+		<td>Text</td>
+		<td>1,2,3,4,5,6,7</td>
+		<td>Text is in the head of each page as a h1 and h2.
+			There is also text inside a table on page 2.
+			And inside the timeline boxes on page 3.
+			Also general text on page 4, 5, 6 and 7.</td>			
+	</tr>
+	<tr>
+		<td>Images</td>
+		<td>1,2,3,4,5,6,7</td>
+		<td>Images in the header of the page as a slide show.
+			Single images are located on pages 4, 5, 6 and 7.</td>
+	</tr>
+	<tr>
+		<td>Video</td>
+		<td>1,3,</td>
+		<td>Youtube video on home page, page 1.
+		Also in the timeline on page 3.</td>
+	</tr>
+	<tr>
+		<td>Audio</td>
+		<td>4</td>
+		<td>Four mp3 sounds on this page.</td>
+	</tr>
+	<tr>
+		<td>table</td>
+		<td>2</td>
+		<td>table contains text of information.</td>
+	</tr>
+	<tr>
+		<td>List</td>
+		<td>1,2,3,4,5,6,7</td>
+		<td>The taskbar on every page is a list, this allows easy manovering throught the pages of the website.</td>
+	</tr>
+	<tr>
+		<td>form</td>
+		<td>7</td>
+		<td>the form has radio buttons to select their favourite character that is provided.
+			Also inside the same form section theres a text input for any other characters.</td>
+	</tr>
+	<tr>
+		<td>Css elements used for structure</td>
+		<td>1,2,3,4,5,6,7</td>
+		<td>All pages have cass that designs the taskbar to give an easier to read and simple looking design.
+		    Page 2 has css to design the table.
+			Page 3 has css to design the timetable layout.</td>
+	</tr>
+	<tr>
+		<td>Pages that have external css, minimum of 3 properties</td>
+		<td>1,2,3,4,5,6,7</td>
+		<td>The external css file adjusts the font size, color and text align for header 1 and 2.
+			The external file also adjusts the color of the background.</td>
+	</tr>
+	<tr> 
+		<td>atleast 1 internal css with 2 elements</td>
+		<td>3</td>
+		<td>On this page the css has several elements to layout the design of the timeline.</td>
+	</tr>
+	<tr>
+		<td>Javascript and other features</td>
+		<td>1,2,3,4,5,6,7</td>
+		<td>There is javascript on every page as this creates the loop design for the header slideshow.
+			Also each page has javascript to show the date and time.</td>
+	</tr>
+</table></center>
+	
+
+</body>

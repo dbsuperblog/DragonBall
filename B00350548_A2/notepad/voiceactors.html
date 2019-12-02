@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- Comment can be added -->
+
+<html>
+
+<head>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="../images/webheader.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader2.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader3.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader4.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader5.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader6.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader7.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader8.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader9.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader10.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader11.jpg" width="1900" height="700" alt="slideshow">
+</div>
+
+<!--javascipt -->
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 4 seconds
+}
+</script>
+
+<meta charset="UTF-8" />
+<title>Voice Actors</title>
+<link rel="stylesheet" type="text/css" href="externalcss.css">
+<h1>Dragon Ball</h1>
+<h2>Past / Present / Future </h2>
+
+<br></br>
+
+</head>
+<body>
+
+<!--css-->
+<style>
+.embolden{font-weight:bold;}
+ul{float:center;text-align:center;width:100%;padding:0;margin:0;list-style-type:none;}
+a{float:center;width:6em;text-decoration:none;color:white;background-color:purple;padding:0.8em 3em;border-right:1px solid white;}
+a:hover {background-color:#ff3300;}
+li {display:inline;}
+</style>
+
+<ul>
+<li><a href="index.html">Index</a></th>
+<li><a href="history.html">History</a></th>
+<li><a href="movies.html">Movies</a></th>
+<li><a href="characters.html">Characters</a></th>
+<li><a href="voiceactors.html">Voice Actors</a></th>
+<li><a href="theories.html">Theories</a></th>
+<li><a href="favourite.html">Favourite</a></th>
+<li><a href="info.html">Info</a></th>
+</ul>
+<br></br>
+
+<!--javascript-->
+<center><script>
+  var currentDate = new Date(),
+      day = currentDate.getDate(),
+      month = currentDate.getMonth() + 1,
+      year = currentDate.getFullYear();
+  document.write(day + "/" + month + "/" + year)
+</script>
+<!--javascript--><script>
+	var currentTime = new Date(),
+      hours = currentTime.getHours(),
+      minutes = currentTime.getMinutes();
+
+	if (minutes < 10) {
+	 minutes = "0" + minutes;
+  }
+
+	document.write(hours + ":" + minutes)
+</script>
+</center>
+
+<center>
+<br></br>
+<h3 style="color:blue;">Here are several voice actors from the Dragon Ball movie franchise, the first set are from the upcoming Dragon Ball Broly movie.</h3>
+<h4 style="color:blue;">Each character has a Japanese voice actor and an English voice actor.</h4>
+<h4 style="color:blue;">The main characters for this movie are Goku, Vegeta, Broly and Frieza.</h4>
+<br></br>
+
+<p><b>The Legendary Super Saiyan Broly is played by 'Bin Shimada'(Japanese) and 'Vic Mignogna'(English).</b></p>
+<img src="../images/vicmignogna.jpg" alt="Vic Mignogna" width="400" height="400">
+<img src="../images/binshimada.jpg" alt="Bin Shimada" width="400" height="400">
+<br></br>
+
+<p><b>Goku is played by 'Masako Nozawa'(Japanese) and 'Sean Schemmel'(English).</b></p>
+<img src="../images/masakonozawa.jpg" alt="Masako Nozawa" width="400" height="400">
+<img src="../images/seanschemmel.jpg" alt="Sean Schemmel" width="400" height="400">
+<br></br>
+
+<p><b>Then Vegeta is played by 'Ryo Horikawa'(Japanese) and 'Christopher Sabat'(English).</b></p>
+<img src="../images/ryohorikawa.jpg" alt="Ryo Horikawa" width="400" height="400">
+<img src="../images/christophersabat.jpg" alt="Christopher Sabat" width="400" height="400">
+<br></br>
+
+<p><b>Frieza is played by'Ryusei Nakao'(Japanese) and 'Christopjer Ayres'(English).</b></p>
+<img src="../images/ryuseinakao.jpg" alt="Ryusei Nakao" width="400" height="400">
+<img src="../images/christopherayres.jpg" alt="Christopher Ayres" width="400" height="400">
+</center>
+ 
+
+
+
+
+
+</body>
+
+</html>

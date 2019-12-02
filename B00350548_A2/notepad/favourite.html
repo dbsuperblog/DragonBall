@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- Comment can be added -->
+
+<html>
+
+<head>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="../images/webheader.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader2.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader3.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader4.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader5.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader6.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader7.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader8.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader9.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader10.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader11.jpg" width="1900" height="700" alt="slideshow">
+</div>
+
+<!--javascript-->
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 4 seconds
+}
+</script>
+
+<meta charset="UTF-8" />
+<title>favourite.html</title>
+
+<link rel="stylesheet" type="text/css" href="externalcss.css">
+<h1>Dragon Ball</h1>
+<h2>Past / Present / Future </h2>
+<br></br>
+
+</head>
+
+<body>
+
+<!--css-->
+<style>
+.embolden{font-weight:bold;}
+ul{float:center;text-align:center;width:100%;padding:0;margin:0;list-style-type:none;}
+a{float:center;width:6em;text-decoration:none;color:white;background-color:purple;padding:0.8em 3em;border-right:1px solid white;}
+a:hover {background-color:#ff3300;}
+li {display:inline;}
+</style>
+
+<ul>
+<li><a href="index.html">Index</a></th>
+<li><a href="history.html">History</a></th>
+<li><a href="movies.html">Movies</a></th>
+<li><a href="characters.html">Characters</a></th>
+<li><a href="voiceactors.html">Voice Actors</a></th>
+<li><a href="theories.html">Theories</a></th>
+<li><a href="favourite.html">Favourite</a></th>
+<li><a href="info.html">Info</a></th>
+</ul>
+<br></br>
+
+<!--javascript-->
+<center><script>
+  var currentDate = new Date(),
+      day = currentDate.getDate(),
+      month = currentDate.getMonth() + 1,
+      year = currentDate.getFullYear();
+  document.write(day + "/" + month + "/" + year)
+</script>
+<!--javascript--><script>
+	var currentTime = new Date(),
+      hours = currentTime.getHours(),
+      minutes = currentTime.getMinutes();
+
+	if (minutes < 10) {
+	 minutes = "0" + minutes;
+  }
+
+	document.write(hours + ":" + minutes)
+</script>
+</center>
+
+<center>
+<h3><b>My favourite character would have to be Vegeta and Gohan</b></h3>
+<img src="../images/vegeta1.jpg" alt="Vegeta1" width="400" height="400">
+<img src="../images/vegeta2.jpg" alt="Vegeta2" width="400" height="400">
+<br></br>
+<img src="../images/gohan1.jpeg" alt="Gohan1" width="400" height="400">
+<img src="../images/gohan2.jpg" alt="Gohan2" width="400" height="400">
+
+<p>These characters are my favourites as to me they seem to have the most potential out of everyone in the dragon ball franchise.</p>
+
+<p>My other top characters are Goku, Broly, Frieza, Zamasu and Goku Black.</p>
+
+<br></br>
+<form>
+  <input type="radio" name="character" value="vegeta" checked> Vegeta<br>
+  <input type="radio" name="character" value="gohan"> Gohan<br>
+  <input type="radio" name="character" value="goku"> Goku<br>
+  <input type="radio" name="character" value="broly" checked> Broly<br>
+  <input type="radio" name="character" value="frieza"> Frieza<br>
+  <input type="radio" name="character" value="zamasu"> Zamasu<br>
+  <input type="radio" name="character" value="gokublack"> Goku Black<br>
+   Other character:<input type="text" name="character" value="other"><br>
+ 
+</form>
+
+<br></br>
+</center>
+</body>
+
+</html>
+
+
