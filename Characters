@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- Comment can be added -->
+
+<html>
+
+<head>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="../images/webheader.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader2.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader3.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader4.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader5.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader6.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader7.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader8.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader9.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader10.jpg" width="1900" height="700" alt="slideshow">
+  <img class="mySlides" src="../images/webheader11.jpg" width="1900" height="700" alt="slideshow">
+</div>
+
+  <!--javascript-->
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 4 seconds
+}
+</script>
+
+<meta charset="UTF-8" />
+<title>Characters</title>
+<link rel="stylesheet" type="text/css" href="externalcss.css">
+<h1>Dragon Ball</h1>
+<h2>Past / Present / Future </h2>
+
+<br></br>
+
+</head>
+<body style="background-color:#E3E5E6;">
+
+<ul>
+
+<!--css-->
+<style>
+.embolden{font-weight:bold;}
+ul{float:center;text-align:center;width:100%;padding:0;margin:0;list-style-type:none;}
+a{float:center;width:6em;text-decoration:none;color:white;background-color:purple;padding:0.8em 3em;border-right:1px solid white;}
+a:hover {background-color:#ff3300;}
+li {display:inline;}
+</style>
+<li><a href="index.html">Home</a></th>
+<li><a href="history.html">History</a></th>
+<li><a href="movies.html">Movies</a></th>
+<li><a href="characters.html">Characters</a></th>
+<li><a href="voiceactors.html">Voice Actors</a></th>
+<li><a href="theories.html">Theories</a></th>
+<li><a href="favourite.html">Favourite</a></th>
+<li><a href="info.html">Info</a></th>
+</ul>
+<br></br>
+
+<!--javascript-->
+<center><script>
+  var currentDate = new Date(),
+      day = currentDate.getDate(),
+      month = currentDate.getMonth() + 1,
+      year = currentDate.getFullYear();
+  document.write(day + "/" + month + "/" + year)
+</script>
+<!--javascript--><script>
+	var currentTime = new Date(),
+      hours = currentTime.getHours(),
+      minutes = currentTime.getMinutes();
+
+	if (minutes < 10) {
+	 minutes = "0" + minutes;
+  }
+
+	document.write(hours + ":" + minutes)
+</script>
+</center>
+<br></br>
+<br></br>
+
+<center><h3>These are the main characters from the upcoming Broly movie</h3></center>
+
+<center><h4>Broly is obviously one of the main characters considering the movie is based around him.</h4></center>
+<center><img src="../images/Brolycharacter.jpg" alt="Broly Character" width="1200" height="800"></center>
+<center><audio controls>
+	<source src="../sounds/brolyscream.mp3" type="audio/mpeg">
+</audio></center>
+
+<center><h4>Goku, Vegeta and Frieza will have an allience to fight against their enemy, Broly.</h4></center>
+<center><img src="../images/Gokucharacter.jpg" alt="Goku Character" width="600" height="300">
+<img src="../images/Vegetacharacter.jpg" alt="Vegeta Character" width="600" height="300">
+<img src="../images/Friezacharacter.jpeg" alt="Frieza Character" width="600" height="300"></center>
+
+<center>
+<audio controls> 
+	<source src="../sounds/gokukaioken.mp3" type="audio/mpeg">
+</audio>
+<audio controls> 
+	<source src="../sounds/vegetathatsmybulma.mp3" type="audio/mpeg">
+</audio>
+<audio controls> 
+	<source src="../sounds/friezamakeyoucry.mp3" type="audio/mpeg">
+</audio>
+</center>
+	
+	
+
+
+
+</body>
+
+</html>
